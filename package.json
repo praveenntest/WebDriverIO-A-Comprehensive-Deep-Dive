@@ -1,0 +1,23 @@
+{
+  "name": "ttdwdio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wdio": "wdio run ./wdio.conf.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^8.27.0"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^8.26.3",
+    "@wdio/mocha-framework": "^8.26.3",
+    "@wdio/spec-reporter": "^8.26.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
