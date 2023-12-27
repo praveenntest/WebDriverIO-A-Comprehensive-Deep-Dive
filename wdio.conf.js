@@ -20,9 +20,19 @@ exports.config = {
     // If you are calling `wdio` from an NPM script (see https://docs.npmjs.com/cli/run-script),
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
-    //
+    // 
+/*
+    //Allure Reporting
+    reporters: ['spec', ['allure', {
+        outputDir: '',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: false,
+      }]],
+      */
+
     specs: [
-        './test/specs/**/*.js'
+        // './test/specs/**/*.js'
+        './test/specs/dragDrop.e2e.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -124,7 +134,11 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: [['allure',{
+        outputDir : 'allure-results',
+        },
+    ],
+],
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
