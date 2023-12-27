@@ -134,11 +134,19 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: [['allure',{
-        outputDir : 'allure-results',
-        },
-    ],
-],
+//     reporters: [['allure',{
+//         outputDir : 'allure-results',
+//         },
+//     ],
+// ],
+
+reporters : ['spec'],
+cucumberOpts: {
+    require: ['./step-definitions/websiteTitleSteps.js'], // add your new file here
+    //...
+  },
+
+   
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
