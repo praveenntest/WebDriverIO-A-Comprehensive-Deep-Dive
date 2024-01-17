@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Drag and Drop Interaction" timestamp="2024-01-17T17:54:32" time="27.089" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Drag and Drop Interaction"/>
+      <property name="capabilities" value="chrome.120_0_6099_216.mac"/>
+      <property name="file" value="file://./test/specs/dragDrop.e2e.js"/>
+    </properties>
+    <testcase classname="chrome.120_0_6099_216.mac.Drag_and_Drop_Interaction" name="should drag and drop the elements" time="27.088">
+      <system-out><![CDATA[
+COMMAND: POST /session/3cd2a66ce04c0f055cfeaecab16f3aa6/url - {"url":"https://demoqa.com/droppable/"}
+RESULT: {"url":"https://demoqa.com/droppable/"}
+COMMAND: POST /session/3cd2a66ce04c0f055cfeaecab16f3aa6/element - {"using":"css selector","value":"[id=\"draggable\"]"}
+RESULT: {"using":"css selector","value":"[id=\"draggable\"]"}
+COMMAND: POST /session/3cd2a66ce04c0f055cfeaecab16f3aa6/element - {"using":"css selector","value":"[id=\"droppable\"]"}
+RESULT: {"using":"css selector","value":"[id=\"droppable\"]"}
+COMMAND: POST /session/3cd2a66ce04c0f055cfeaecab16f3aa6/actions - {"actions":[{"id":"action1","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pause","duration":10},{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerUp","button":0}]}]}
+RESULT: {"actions":[{"id":"action1","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pause","duration":10},{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/3cd2a66ce04c0f055cfeaecab16f3aa6/actions - {}
+RESULT: {}
+COMMAND: DELETE /session/3cd2a66ce04c0f055cfeaecab16f3aa6 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
